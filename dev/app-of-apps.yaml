@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-of-apps
+  name: app-of-apps-dev
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/swagat-devops/gitops-application-repo.git
-    targetRevision: HEAD
-    path: ./declarative/dev/app-of-apps
+    targetRevision: dev
+    path: ./declarative/app-of-app/dev/
   destination:
     server: https://kubernetes.default.svc
     namespace: kubernetes
