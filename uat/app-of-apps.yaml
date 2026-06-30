@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/swagat-devops/gitops-application-repo.git
-    targetRevision: dev
+    targetRevision: HEAD
     path: ./declarative/app-of-app/uat/
   destination:
     server: https://kubernetes.default.svc
